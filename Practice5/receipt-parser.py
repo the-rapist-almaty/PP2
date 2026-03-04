@@ -41,4 +41,4 @@ with open('receipt.json', 'w+', encoding='utf-8') as file:
 
 with open('receipt.json', 'r') as file:
     data = json.load(file)
-print
+print(data)
