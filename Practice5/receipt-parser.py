@@ -36,9 +36,5 @@ receipt_info ={ "Date and time" : time[0][7:],
                 "Payment method" :payment_method[0][:len(payment_method)-4],
                 "Product": name_price
                 }
-with open('receipt.json', 'w+', encoding='utf-8') as file:
-    json.dump(receipt_info, file,ensure_ascii=False,  indent=4)
-
-with open('receipt.json', 'r') as file:
-    data = json.load(file)
-print(data)
+x = json.dumps(receipt_info, ensure_ascii=False, indent=4)
+print(x)
